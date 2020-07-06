@@ -91,3 +91,4 @@ This function return a boolean depending on is a valid English word and it's ava
 
 `getMatchesWords(String word)`
 Get a String list with all English words in a given string.
+Ex: getMatchesWords("working")
