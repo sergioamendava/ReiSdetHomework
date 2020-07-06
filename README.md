@@ -90,5 +90,5 @@ Clone this repo to your local machine using `git clone https://github.com/sergio
 This function return a boolean depending on is a valid English word and it's available in the English words list returned by the dictionary web service.
 
 `getMatchesWords(String word)`
-Get a String list with all English words in a given string.
+Get a String list with all English words contained in a given string.
 Ex: getMatchesWords("working")
