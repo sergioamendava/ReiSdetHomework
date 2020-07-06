@@ -5,18 +5,37 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/** Main class that contains the logic for dictionary handling. */
 public class Dictionary {
 
+  /** The Dictionary. */
   public Map<String, String> dictionary;
 
+  /**
+   * Gets dictionary.
+   *
+   * @return the dictionary
+   */
   public Map<String, String> getDictionary() {
     return dictionary;
   }
 
+  /**
+   * Sets dictionary.
+   *
+   * @param dictionary the dictionary
+   */
   public void setDictionary(Map<String, String> dictionary) {
     this.dictionary = dictionary;
   }
 
+  /**
+   * This function checks the correct writing of the word to search and will return true if within
+   * in the English words list, otherwise it will return false.
+   *
+   * @param word to search
+   * @return the boolean
+   */
   public boolean isEnglishWord(String word) {
     boolean isEnglishWord = false;
 
@@ -26,6 +45,12 @@ public class Dictionary {
     return isEnglishWord;
   }
 
+  /**
+   * Get a String list with all English words contained in a given string
+   *
+   * @param word the word
+   * @return the matches words as string list
+   */
   public List<String> getMatchesWords(String word) {
     List<String> wordsList = new ArrayList<>();
     List<String> matches = new ArrayList<>();
